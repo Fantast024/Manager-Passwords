@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="707.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <center>
+        <FlowPane prefHeight="325.0" prefWidth="903.0" BorderPane.alignment="CENTER">
+            <TableView fx:id="tableView" prefHeight="325.0" prefWidth="860.0">
+                <columns>
+
+                    <TableColumn fx:id="userTable" prefWidth="262.0" text="Имя пользователя" />
+                    <TableColumn fx:id="passwordColumn" minWidth="0.0" prefWidth="198.0" text="Пароль" />
+                    <TableColumn fx:id="commentColumn" minWidth="0.0" prefWidth="199.0" text="Комментарии" />
+                    <TableColumn fx:id="dateColumn" minWidth="0.0" prefWidth="196.0" text="Дата" />
+                </columns>
+            </TableView>
+         <BorderPane.margin>
+            <Insets left="30.0" />
+         </BorderPane.margin>
+        </FlowPane>
+    </center>
+    <top>
+        <FlowPane prefHeight="40.0" prefWidth="938.0" BorderPane.alignment="CENTER">
+            <Label text="Выберите категорию:">
+                <FlowPane.margin>
+                    <Insets left="350.0" />
+                </FlowPane.margin>
+            </Label>
+            <ChoiceBox fx:id="choiceCategory" prefWidth="150.0">
+                <FlowPane.margin>
+                    <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                </FlowPane.margin>
+            </ChoiceBox>
+        </FlowPane>
+    </top>
+    <bottom>
+        <FlowPane prefHeight="342.0" prefWidth="938.0" BorderPane.alignment="CENTER">
+            <Button mnemonicParsing="false" onAction="#addClicked" text="Добавить">
+                <FlowPane.margin>
+                    <Insets left="170.0" right="50.0" />
+                </FlowPane.margin>
+            </Button>
+            <VBox prefHeight="175.0" prefWidth="250.0">
+                <children>
+                    <Label text="Введите пароль" />
+                    <TextField fx:id="passwordInput" prefHeight="25.0" prefWidth="154.0" />
+                    <Label text="Введите имя пользователя" />
+                    <TextField fx:id="usernameInput" />
+                    <Label text="Введите комментарий" />
+               <ChoiceBox fx:id="choiceCommit" prefWidth="150.0" />
+                    <Label text="Введите дату" />
+                    <TextField fx:id="dateInput" />
+                </children>
+            <FlowPane.margin>
+               <Insets left="20.0" top="70.0" />
+            </FlowPane.margin></VBox>
+            <Button mnemonicParsing="false" onAction="#clear" text="Очистить">
+                <FlowPane.margin>
+                    <Insets left="50.0" />
+                </FlowPane.margin>
+            </Button>
+         <Button mnemonicParsing="false" onAction="#sorting" text="Сортировать">
+            <FlowPane.margin>
+               <Insets left="50.0" />
+            </FlowPane.margin>
+         </Button>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </FlowPane>
+    </bottom>
+</BorderPane>
