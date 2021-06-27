@@ -55,6 +55,14 @@ Alpha 1.0
 **Зависимости**
 ---
 
+![class](https://user-images.githubusercontent.com/85519603/123550669-53169100-d777-11eb-8975-4c90ca1ae125.PNG)
+
+
+- Java.
+- IntelliJ IDEA.
+- Библиотека JavaFX.
+- MySQL.
+
 **Установка**
 ---
 Разместить проект в папке с проектами программной среды.
